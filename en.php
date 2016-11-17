@@ -167,13 +167,13 @@ $ln_ru['txt1'] = 'The bot will be effective only if others find it,' ."\r\n".
 /* help.php */	
 $ln_hlp['txt1'] = 'Hello dear user' . "\r\n" .
 	'Thank you for choosing this bot' . "\r\n" .
-	"Let's get acquainted with the functioning of the robot system, when you and others register a channel by that Advertising, " ."\r\n".
+	"Let's get acquainted with the functioning of the bot system, when you and others register a channel by that Advertising, " ."\r\n".
 	"Your channel ad will be shown on other channels with peer to peer mode,". "\r\n" .
 	'This means that in each exchange timeslot, your ad will be shown on another channel, and ' .
 	'another channel\'s ad will be shown in your channel,' ."\r\n".
 	'in the next timeslot, your ad will be shown in new channel and new another channel\'s add will be shown in your channel.' . "\r\n".
 	'this cycle continues until you put your ad across all channels in group.'."\r\n".
-	'After the end of the cycle will be repeated Advertising in the group.'."\r\n".
+	'After the end of the cycle will be repeated Advertising in the group.'."\r\n"."\r\n".
 	"If members of your channel was more than up to your group you must remove your channel and add again by new member data,".
 	" this is because you have your ads in a higher group when appropriate." . "\r\n" .
 	"Groups based on the number of members: " . "\r\n" .
@@ -194,15 +194,15 @@ $ln_hlp['txt1'] = 'Hello dear user' . "\r\n" .
 	'200K+1 To 300K members' . "\r\n" .
 	'300K+1 To 400K members' . "\r\n" .
 	'400K+1 To 500K members' . "\r\n" .
-	"As you see design groups in a way that by increase your members,you have a chance to participate in a larger group. " ."\r\n".
+	"As you see design groups in a way that by increase your members,you have a chance to participate in a larger group. " ."\r\n"."\r\n".
 	"You're three steps to get started:". "\r\n" .
 	"1. Add your Channel by 'Add Channel' button.". "\r\n" .
 	"2. insert your ad by 'Add Adverisment' button.". "\r\n" .
 	"3. Choose your timeslots by pressing 'ShowTimes' button.". "\r\n" .
 	"\r\n" .
-	"if you need to help, at the time that bot has hang, type /restart or /menu please. ". "\r\n" .
+	"if you need to help, at the time that bot has hang, type /restart or /menu please. ". "\r\n" ."\r\n" .
 	"Note: ** Massive propaganda, it causes escape your members, so don't use of same bots in your channel at the same time!" . "\r\n" .
-	"Accordingly, we will not have more than two ads at each timeslot, so the way is open for you to climb! " ."\r\n".
+	"Accordingly, we will not have more than two ads at each timeslot, so the way is open for you to climb! " ."\r\n"."\r\n" .
 	'You can participate in the development of other languages:' ."\r\n". 'https://github.com/hamid80386/adbot'."\r\n".
 	"Good luck to you" ."\r\n".
 	"@tabadol_kanal_bot" ."\r\n". "@tabadole_bartar";
