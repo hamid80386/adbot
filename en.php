@@ -1,24 +1,42 @@
 <?php
 include_once('../emoji.php');
+$ln_version = 'Version';
 $ln_cancel = 'Cancel';
 $ln_finish = 'Finish';
+$ln_return = 'Return';
+$ln_mainmenu = 'Main Menu';
 $ln_array1 = array( 'Add Channel' , 'Add Advertisement', 'ShowTimes' , 'Reports');
 $ln_array2 = array('Status','Flag Abuse','Remove Channel','Tools');
 $ln_array3 = array('Help','Rate Us','Contact Us','Language');
 if(isset($arr1)) unset($arr1);
 $arr1 = array( $ln_array1 , $ln_array2 , $ln_array3 );
+
+$ln_inarray1 = array('Subtitle','Inline Button');
+$ln_inarray2 = array('Long Text by Photo','Effects');
+$ln_inarray3 = array($ln_mainmenu);
+$arr1in1 = array( $ln_inarray1 , $ln_inarray2 , $ln_inarray3  );
+
+$ln_meffect1 = array('Aqua','Boost','Bubbles');
+$ln_meffect2 = array('Colorize','Cool','Fuzzy');
+$ln_meffect3 = array('Gray','Light','Sepia');
+$ln_meffect4 = array('Nostalgia','Old 1','Old 2');
+$arr1in2 = array( $ln_meffect1 , $ln_meffect2 , $ln_meffect3, $ln_inarray4  );
+
 $ln_key_link = 'Please choose a button!';
+$ln_tools_txt = 'Here we having useful tools for channel managers...';
 $ln_rate_now = 'Rate Us Now ;-)';
 
 $ln_lang = 'Language';
 $ln_add_channel = 'Add Channel';
-$ln_transparent_btn = 'Transparent Button';
+$ln_transparent_btn = 'Inline Button';
 $ln_add_ad = 'Add Advertisement';
 $ln_showtimes = 'ShowTimes';
 $ln_remove_channel = 'Remove Channel';
 $ln_long_text = 'Long Text by Photo';
 $ln_subtitle = 'Subtitle';
+$ln_effect = 'Effects';
 $ln_abuse = 'Flag Abuse';
+$ln_tools = 'Tools';
 $ln_contactus = 'Contact Us';
 $ln_rateus = 'Rate Us';
 $ln_your_status = 'Status';
@@ -61,8 +79,7 @@ $ln_reg['txt9'] .= "Please check there are @tabadol_kanal_bot in your administra
 /* ads.php */
 $ln_ads = array();
 $ln_ads['txt1'] = 'Here you must submit an ad to introduce to others. ' . "\r\n" .
-'Notice: ** Your ad should not contain content such as pornography or fraud!' . "\r\n" .
-'1. Enter your channel\'s username without @ ' . "\r\n" . 'Example: true_love';
+'Notice: ** Your ad should not contain content such as pornography or fraud!' . "\r\n" ;
 $ln_ads['txt2'] = 'This channel isn\'t registered with you, please enter your own channel\'s username. (without @)';
 $ln_ads['txt3'] = 'This channel is in our block list, so you can\'t send any ad to to this!';
 
@@ -76,6 +93,8 @@ $ln_ads['txt5'] .= 'Notice: ** your text must be shorter than 200 character.' . 
 $ln_ads['txt5'] .= "Note: ** Be sure to enter your channel address (with @) in your text" . "\r\n" ;
 
 $ln_ads['txt6'] = "Your ad was successfully registered, Now select your timeslots by choose \"ShowTimes\" button" . "\r\n" ;
+$ln_ads['txt7'] = "1. Please choose one of your channels from below list:" . "\r\n ";
+$ln_ads['txt8'] = "You don't have any registered channel, please first use 'Add Channel' button " .unichr(0x203C)." \r\n" ;
 /* ads.php END */
 
 /* exchange.php */
@@ -83,24 +102,26 @@ $ln_ex['txt1'] = 'Changes were made';
 $ln_ex['txt2'] = 'Enter your channel\'s username without @ '  . "Example: jingo ";;
 $ln_ex['txt3'] = 'This channel isn\'t registered with you, please enter your own channel\'s username. (without @)';
 
-$ln_ex['txt4'] = 'Note: ** The times is (UTC +3:30)';
-$ln_ex['txt4'] .= unichr(0x25C0).'Note: ** All channels are member of 20 to 22 timeslot permanently.'."\r\n";
-$ln_ex['txt4'] .= unichr(0x25C0).'Notice: ** Don\'t remove ad  entering your channel until the end of timeslot.' ;
-$ln_ex['txt4'] .= unichr(0x25C0).'Notice: ** Don\'t send any post after input ad until the end of timeslot.' ;
+$ln_ex['txt4'] =  unichr(0x25B6).' Note: ** The times is (UTC)' . "\r\n";
+$ln_ex['txt4'] .= unichr(0x25B6).' Note: ** All channels are member of 16:30 To 18:30 timeslot permanently.'."\r\n";
+$ln_ex['txt4'] .= unichr(0x25B6).' Notice: ** Don\'t remove ad  entering your channel until the end of timeslot.' ."\r\n";
+$ln_ex['txt4'] .= unichr(0x25B6).' Notice: ** Don\'t send any post after input ad until the end of timeslot.' ."\r\n";
 $ln_ex['txt4'] .= '----------------------'. "\r\n"  ;
-$ln_ex['txt4'] .= unichr(0x25C0).'Maximum number of advertising in each time is two, One normal like your ad and one VIP' ;
-$ln_ex['txt4'] .= ", so your channel don't have much bustle  " . unichr(0x1F60A);;
+$ln_ex['txt4'] .= unichr(0x25B6).' Maximum number of advertising in each time is two, One normal like your ad and one VIP' ;
+$ln_ex['txt4'] .= ", so your channel don't have much bustle  " . unichr(0x1F60A) .", \r\n";
 $ln_ex['txt4'] .= ' Therefore we help you to increase your members. '. unichr(0x1F339) ."\r\n"  ;
-$ln_ex['txt4'] .= unichr(0x25C0).'Now you\'re a member of the following timeslot:'."\r\n";
+$ln_ex['txt4'] .= unichr(0x25B6).' Now you\'re a member of the following timeslot:'."\r\n";
 $ln_ex['txt4'] .= unichr(0x1F447);
-$ln_ex['t2022'] = '20 To 22  (UTC +3:30)';
-$ln_ex['t1417'] = '17 To 17  (UTC +3:30)';
-$ln_ex['t2410'] = '00 To 10am  (UTC +3:30)';
-$ln_ex['td1417'] = 'Remove 14 To 17 timeslot';
-$ln_ex['td2410'] = 'Remove 00 To 10am timeslot';
-$ln_ex['ta1417'] = 'Add 14 To 17 timeslot (UTC +3:30)';
-$ln_ex['ta2410'] = 'Add 00 To 10am timeslot (UTC +3:30)';
+$ln_ex['t2022'] = unichr(0x25B6).' '. '16:30 To 18:30  (UTC)';
+$ln_ex['t1417'] = unichr(0x25B6).' '. '10:30 To 13:30  (UTC)';
+$ln_ex['t2410'] = unichr(0x25B6).' '. '21:30 To 6:30am  (UTC)';
+$ln_ex['td1417'] = 'Remove 10:30 To 13:30 timeslot';
+$ln_ex['td2410'] = 'Remove 21:30 To 6:30am timeslot';
+$ln_ex['ta1417'] = 'Add 10:30 To 13:30 timeslot (UTC)';
+$ln_ex['ta2410'] = 'Add 21:30 To 6:30am timeslot (UTC)';
 $ln_ex['txt5'] =  'To add or remove timeslots use of the below buttons' . "\r\n ".unichr(0x1F53D)." \r\n" ;
+$ln_ex['txt6'] =  "You don't have any registered channel, please first use 'Add Channel' button " .unichr(0x203C)." \r\n" ;
+$ln_ex['txt7'] =  "Please choose one of your channels from below list:" . "\r\n ";
 /* exchange.php END */
 
 /* del_channel.php */
@@ -166,7 +187,7 @@ $ln_ru['txt1'] = 'The bot will be effective only if others find it,' ."\r\n".
 
 /* help.php */	
 $ln_hlp['txt1'] = 'Hello dear user' . "\r\n" .
-	'Thank you for choosing this bot' . "\r\n" .
+	'Thank you for choosing this bot' . "\r\n" . "\r\n" .
 	"Let's get acquainted with the functioning of the bot system, when you and others register a channel by that Advertising, " ."\r\n".
 	"Your channel ad will be shown on other channels with peer to peer mode,". "\r\n" .
 	'This means that in each exchange timeslot, your ad will be shown on another channel, and ' .
@@ -205,5 +226,45 @@ $ln_hlp['txt1'] = 'Hello dear user' . "\r\n" .
 	"Accordingly, we will not have more than two ads at each timeslot, so the way is open for you to climb! " ."\r\n"."\r\n" .
 	'You can participate in the development of other languages:' ."\r\n". 'https://github.com/hamid80386/adbot'."\r\n".
 	"Good luck to you" ."\r\n".
-	"@tabadol_kanal_bot" ."\r\n". "@tabadole_bartar";
+	"@tabadole_bartar" ."\r\n". "@tabadol_kanal_bot  (" . $ln_version .': '. VERSION . ')';
+/* help.php END */	
+
+/* subtitle.php */
+$ln_st['txt1'] = 'This tool allow you to attach a text on a photo or video. (the text must be 200 characters in maximum).' . "\r\n" . 
+	"\r\n" .  "1. Upload your photo/video or forward that here...";
+$ln_st['txt2'] = '2. Please enter your text: ' . "\r\n" ;
+$ln_st['txt3'] = 'You can send output to one of below channels:' . "\r\n" ;
+$ln_st['txt4'] = 'Item Sent.';
+/* subtitle.php END */
+
+/* longtext.php */		
+$ln_lt['txt1'] = 'This tool allow you to attach a photo on a long text. (the text must be 4000 characters in maximum).'. "\r\n" . "\r\n" . 
+	"1. Upload your photo or forward that here...";
+$ln_lt['txt2'] = '2. Please enter your text: ' . "\r\n" ;	
+$ln_lt['txt3'] = '** The size of your file must be smaller than 300 kb, please try again your upload/forward by smaller file.';
+/* longtext.php END */
+
+/* effect.php */
+$ln_ef['txt1'] = 'This is a magic tool that can add nice effect to your photos.' . "\r\n" .
+"You can forward the final images to 'Subtitle', 'Long Text by Photo' and 'Inline Button' " ."\r\n \r\n" .
+"For start upload or forward a photo here... " ;
+$ln_ef['txt2'] = 'Please choose one of the following effects: ';
+$ln_ef['txt3'] = 'Photo Sent';
+/* effect.php END */
+
+/* inline button */
+$ln_ib['txt1'] = 'This tool allow you to attach one or more inline butoon to your post, buttons can have URL address.' ."\r\n".
+'1. insert a text or upload/forward a photo here:';
+$ln_ib['txt2'] = '2. please insert a text for your photo:';
+$ln_ib['txt3'] = "Yout must make an array for your buttons, make that by below format: " . "\r\n" .
+				 "button name * link , button name * link , ..." . "\r\n" .
+				 "Notice: **Link URLs must be contained http:// or https:// "	;
+$lb_ib['txt4'] = "Done!";
+/* inline button END */
+
+/* Exchange */
+$ln_exc['txt1'] = "Hello, we have an ad exchange for your channel: "; // .$source. // 
+$ln_exc['txt2'] = "\r\n" . "Target channel: " ; // .@$target. 
+$ln_exc['txt3'] = "\r\n" . "If you see a violation, inform us from \"Flag Abuse\" button. \r\n". "@tabadol_kanal_bot " . 
+				  "\r\n" ."Join to our counter: @tabadole_bartar"; 			 
 ?>
