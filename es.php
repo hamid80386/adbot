@@ -1,7 +1,7 @@
 <?php
 /*
 Hello
-Before make changes for us, please registe in github.com 
+Before make changes for us, please register in github.com 
 Only read below manual and then download your language.
 then after change string for make proper strings for us, commit new changes .
 
