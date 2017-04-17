@@ -43,6 +43,11 @@ $ln_your_status = 'Status';
 $ln_help = 'Help';
 $ln_reports = 'Reports';
 
+/* Accepting */
+$ln_acp = array();
+$ln_acp['accepted'] = 'Dear user, Your channel accepted.' . "\r\n". "Channel's username: @";
+$ln_acp['crd_file'] = 'crd.en.php';
+
 /* Register.php */
 $ln_reg = array();
 $ln_reg['txt1'] =   "Welcome to popularity :-)" . "\r\n" . "1. Please enter your channel's name.". "\r\n".  
@@ -84,8 +89,8 @@ $ln_ads['txt2'] = 'This channel isn\'t registered with you, please enter your ow
 $ln_ads['txt3'] = 'This channel is in our block list, so you can\'t send any ad to to this!';
 
 $ln_ads['txt4'] = '2. Your ad can be text or a combination of text and photos' . "\r\n" ;
-$ln_ads['txt4'] .= 'If that\'s text, enter your text here,' . "\r\n" ;
-$ln_ads['txt4'] .= "if is a combination of text and photo, upload or forward a photo here." . "\r\n" ;
+$ln_ads['txt4'] .= 'If it\'s a text, enter your text here,' . "\r\n" ;
+$ln_ads['txt4'] .= "if it's a combination of text and photo, upload or forward a photo here." . "\r\n" ;
 $ln_ads['txt4'] .= "Note: ** Be sure to enter your channel address (with @) in your text" . "\r\n" ;
 
 $ln_ads['txt5'] = "3. You have entered a photo, so insert a text for that." . "\r\n" ;
@@ -141,6 +146,8 @@ $ln_ln['txt2'] = 'Please choose your language.';
 $ln_ln['txt3'] = 'Menu renewed.';
 $ln_ln['fa'] = 'فارسی';
 $ln_ln['en'] = 'English';
+$ln_ln['es'] = 'Español';
+
 /* lang.php END */
 
 /* report.php */
@@ -167,6 +174,8 @@ $ln_ys['videoad'] = 'Video Ad: ';
 $ln_ys['textad'] = 'Text Ad: ';
 $ln_ys['has'] = ' Yes ';
 $ln_ys['hasnt'] = ' No ';
+$ln_ys['crd'] = ' ';
+$ln_ys['ad_crd'] = ' ';
 $ln_ys['your_status'] = "Your channel's status: \r\n";
 /* yourstatus.php END */
 
