@@ -13,14 +13,23 @@ Then after make new language or change string for make proper strings for us, co
 
 
 ** You must only change strings that on the right side of =
+
 ** If in the string find \ before " or ' ,please  don't remove that.
+
 ** Don't translate /restart and /menu
+
 ** Don't translate URLs
+
 ** Don't translate Channel names Like @tabadole_bartar
+
 ** Don't translate array keyword and ( after that or ) in the end of that string.
+
 ** Don't remove ; from end of strings.
+
 ** Don't remove . that is outside of " or ' \
+
 ** Dont't change or remove unichr(any code) from string;
+
 
 Example of true translates:
 
@@ -40,4 +49,3 @@ so these strings are same:
 
 
 Thanks for your collaboration :-)
-
