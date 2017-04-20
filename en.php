@@ -147,6 +147,7 @@ $ln_ln['txt3'] = 'Menu renewed.';
 $ln_ln['fa'] = 'فارسی';
 $ln_ln['en'] = 'English';
 $ln_ln['es'] = 'Español';
+$ln_ln['pl'] = 'Polski';
 
 /* lang.php END */
 
