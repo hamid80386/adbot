@@ -142,7 +142,7 @@ $ln_dc['txt4'] = 'Nie jesteś właścicielem tego kanału.' . "\r\n";
 /* lang.php */
 $ln_ln['txt1'] = 'Język został zmieniony.';
 $ln_ln['txt2'] = 'Wybierz język.';
-$ln_ln['txt3'] = 'Menu odświerzone.';
+$ln_ln['txt3'] = 'Menu odświeżone.';
 $ln_ln['fa'] = 'فارسی';
 $ln_ln['en'] = 'English';
 $ln_ln['es'] = 'Español';
